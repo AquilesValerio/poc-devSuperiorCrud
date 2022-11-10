@@ -1,0 +1,10 @@
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Aquiles V', '720.881.680-87', 5000.0,'1987-05-29', 1);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Tatiane B', '029.218.410-70', 6500.0,'1983-12-31', 1);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Bernardo B', '661.940.230-58', 3900.0,'1990-10-06', 2);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Amanda V', '033.943.410-42', 8500.0,'1988-11-14', 3);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Maria Aquila', '120.924.530-25', 7400.0,'1965-04-30', 2);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Marcos Valerio', '563.087.180-33', 9500.0,'1962-11-22', 2);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Ayrton Senna', '460.291.430-69', 6500.0,'1983-10-18',0);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Edson Arantes', '176.190.760-34', 4700.0,'1992-05-29', 1);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Ronaldo Nazario', '428.972.330-60', 8500.0,'1994-10-19', 1);
+INSERT INTO tb_client (name, cpf, income, data_Nasc, children) VALUES ('Ronaldo Nazario', '428.972.330-60', 8500.0,'1994-10-19', 1);

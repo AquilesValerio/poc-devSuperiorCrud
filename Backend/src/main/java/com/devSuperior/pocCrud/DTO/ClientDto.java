@@ -1,41 +1,38 @@
-package com.devSuperior.pocCrud.entities;
+package com.devSuperior.pocCrud.DTO;
 
-import org.springframework.format.annotation.DateTimeFormat;
-import javax.persistence.Id;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
-import javax.persistence.GenerationType;
+import com.devSuperior.pocCrud.entities.Client;
+
 import java.time.Instant;
 import java.time.LocalDate;
 
+public class ClientDto {
 
-@Entity
-@Table(name = "tb_client")
-public class Client {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
     private String cpf;
     private Double income;
-    @Column(name = "data_Nasc")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private LocalDate birthDate;
     private Integer children;
 
-    public Client() {
+    public ClientDto() {
     }
 
-    public Client(long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
+    public ClientDto(long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
         this.id = id;
         this.name = name;
         this.cpf = cpf;
         this.income = income;
         this.birthDate = birthDate;
         this.children = children;
+    }
+
+    public ClientDto(Client entity) {
+        this.id = entity.getId();
+        this.name = entity.getName();
+        this.cpf = entity.getCpf();
+        this.income = entity.getIncome();
+        this.birthDate = entity.getBirthDate();
+        this.children = entity.getChildren();
     }
 
     public long getId() {
